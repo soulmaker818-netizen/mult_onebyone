@@ -1,0 +1,16 @@
+window.QUESTION_BANK=[
+{id:"b1",level:"basic",topic:"認識乘法",question:"2 組，每組有 3 個蘋果，一共有多少個？",visual:{groups:2,each:3},options:["5 個","6 個","8 個","9 個"],answer:"6 個",explanation:"3 + 3 = 6，所以 2 × 3 = 6。"},
+{id:"b2",level:"basic",topic:"認識乘法",question:"4 + 4 + 4 可以寫成哪一道乘法算式？",options:["2 × 4","3 × 4","4 × 4","3 × 3"],answer:"3 × 4",explanation:"有 3 個 4，所以寫成 3 × 4。"},
+{id:"b3",level:"basic",topic:"認識乘法",question:"5 組，每組有 2 枝鉛筆，哪個算式正確？",visual:{groups:5,each:2},options:["5 + 2","5 × 2","5 − 2","5 × 5"],answer:"5 × 2",explanation:"5 組，每組 2 枝，所以是 5 × 2。"},
+{id:"f1",level:"facts",topic:"乘法計算",question:"2 × 6 = ？",options:["8","10","12","14"],answer:"12",explanation:"6 + 6 = 12。"},
+{id:"f2",level:"facts",topic:"乘法計算",question:"3 × 3 = ？",options:["6","8","9","12"],answer:"9",explanation:"3 + 3 + 3 = 9。"},
+{id:"f3",level:"facts",topic:"乘法計算",question:"4 × 5 = ？",options:["9","15","20","25"],answer:"20",explanation:"5 + 5 + 5 + 5 = 20。"},
+{id:"f4",level:"facts",topic:"乘法計算",question:"6 × 2 = ？",options:["8","10","12","16"],answer:"12",explanation:"6 + 6 = 12。"},
+{id:"f5",level:"facts",topic:"乘法計算",question:"7 × 3 = ？",options:["10","18","21","24"],answer:"21",explanation:"7 + 7 + 7 = 21。"},
+{id:"f6",level:"facts",topic:"乘法計算",question:"8 × 4 = ？",options:["24","28","32","36"],answer:"32",explanation:"8 × 4 = 32。"},
+{id:"f7",level:"facts",topic:"乘法計算",question:"9 × 5 = ？",options:["35","40","45","50"],answer:"45",explanation:"9 × 5 = 45。"},
+{id:"f8",level:"facts",topic:"乘法計算",question:"6 × 6 = ？",options:["30","32","36","42"],answer:"36",explanation:"6 組 6 個，共 36。"},
+{id:"s1",level:"story",topic:"生活應用題",question:"每盒有 4 粒橙，買了 3 盒。一共有多少粒？",options:["7 粒","10 粒","12 粒","14 粒"],answer:"12 粒",explanation:"3 × 4 = 12 粒。"},
+{id:"s2",level:"story",topic:"生活應用題",question:"每張桌子有 2 位同學，4 張桌子共有多少位？",options:["6 位","8 位","10 位","12 位"],answer:"8 位",explanation:"4 × 2 = 8 位。"},
+{id:"s3",level:"story",topic:"生活應用題",question:"小美每天閱讀 5 頁，連續 3 天，一共閱讀多少頁？",options:["8 頁","10 頁","15 頁","20 頁"],answer:"15 頁",explanation:"5 + 5 + 5 = 15 頁。"},
+{id:"s4",level:"story",topic:"生活應用題",question:"每隻蜘蛛有 8 條腿，2 隻蜘蛛共有多少條腿？",options:["10 條","12 條","16 條","18 條"],answer:"16 條",explanation:"2 × 8 = 16 條。"}];
