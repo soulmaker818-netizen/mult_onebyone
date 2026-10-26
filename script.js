@@ -1,5 +1,5 @@
 (()=>{const $=id=>document.getElementById(id),TOTAL=10;let player={},qs=[],i=0,score=0,locked=false,jsonpId=0;
-const endpoint=()=>window.GAME_CONFIG&&window.GAME_CONFIG.GOOGLE_SCRIPT_URL&&!window.GAME_CONFIG.GOOGLE_SCRIPT_URL.includes("PASTE_YOUR_")?window.GAME_CONFIG.GOOGLE_SCRIPT_URL.trim():"";
+const endpoint=()=>window.GAME_CONFIG&&window.GAME_CONFIG.GOOGLE_SCRIPT_URL&&!window.GAME_CONFIG.GOOGLE_SCRIPT_URL.includes("https://script.google.com/macros/s/AKfycbziqJNyNzwARm1bj0_Ae-v9DVLJveKmYnCvY4jj4alfhf0jqq67QSYYhwIELSBa5Ww/exec_")?window.GAME_CONFIG.GOOGLE_SCRIPT_URL.trim():"";
 const hide=e=>e.classList.add("hidden"),show=e=>e.classList.remove("hidden");
 function esc(s){return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
 function renderBoard(rows){let arr=Array.isArray(rows)?rows:[];arr.sort((a,b)=>Number(b.score)-Number(a.score)||String(a.name).localeCompare(String(b.name),"zh-Hant"));$("board").innerHTML=arr.length?'<table><thead><tr><th>排名</th><th>名字</th><th>班別</th><th>分數</th></tr></thead><tbody>'+arr.slice(0,50).map((r,n)=>`<tr><td class="rank">${n+1}</td><td>${esc(r.name)}</td><td>${esc(r.className)}</td><td>${Number(r.score)}/10</td></tr>`).join("")+'</tbody></table>':'<div class="empty">目前未有成績。</div>';}
