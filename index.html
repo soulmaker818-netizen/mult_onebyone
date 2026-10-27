@@ -329,7 +329,7 @@
             document.getElementById('leaderboard-modal').classList.add('hidden');
         }
 
-       function fetchLeaderboard() {
+      function fetchLeaderboard() {
             const listEl = document.getElementById('leaderboard-list');
             listEl.innerHTML = '<div class="text-center py-8 text-gray-400">正在下載排行榜資料...</div>';
 
@@ -348,7 +348,7 @@
                         else if (index === 1) rankStyle = "bg-gray-200 text-gray-800 font-bold";
                         else if (index === 2) rankStyle = "bg-amber-100 text-amber-800 font-bold";
 
-                        // 這裡補上了外層的 <div class="...">
+                        // 這裡確保了反引號包覆整段 HTML
                         html += `
                             <div class="flex items-center justify-between p-3 rounded-2xl ${rankStyle}">
                                 <div class="flex items-center gap-3">
