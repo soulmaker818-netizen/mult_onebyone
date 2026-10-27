@@ -329,7 +329,7 @@
             document.getElementById('leaderboard-modal').classList.add('hidden');
         }
 
-        function fetchLeaderboard() {
+       function fetchLeaderboard() {
             const listEl = document.getElementById('leaderboard-list');
             listEl.innerHTML = '<div class="text-center py-8 text-gray-400">正在下載排行榜資料...</div>';
 
@@ -348,17 +348,18 @@
                         else if (index === 1) rankStyle = "bg-gray-200 text-gray-800 font-bold";
                         else if (index === 2) rankStyle = "bg-amber-100 text-amber-800 font-bold";
 
+                        // 這裡補上了外層的 <div class="...">
                         html += `
-                            flex items-center justify-between p-3 rounded-2xl ${rankStyle}
-                            <div class="flex items-center gap-3">
-                                <span class="w-7 text-center font-black">${index + 1}</span>
-                                <div>
-                                    <span class="text-xs bg-white/60 px-2 py-0.5 rounded-md font-bold mr-1">${item.class}</span>
-                                    <span class="font-bold">${item.name}</span>
+                            <div class="flex items-center justify-between p-3 rounded-2xl ${rankStyle}">
+                                <div class="flex items-center gap-3">
+                                    <span class="w-7 text-center font-black">${index + 1}</span>
+                                    <div>
+                                        <span class="text-xs bg-white/60 px-2 py-0.5 rounded-md font-bold mr-1">${item.class}</span>
+                                        <span class="font-bold">${item.name}</span>
+                                    </div>
                                 </div>
-                            </div>
-                            <span class="font-extrabold text-orange-600">${item.score} 分</span>
-                        </div>`;
+                                <span class="font-extrabold text-orange-600">${item.score} 分</span>
+                            </div>`;
                     });
                     listEl.innerHTML = html;
                 })
